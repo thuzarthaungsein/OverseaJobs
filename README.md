@@ -1,5 +1,5 @@
 
-## JWT-Laravel7-VueJS
+## Laravel7-VueJS with JWT
 Testing Project Frame for Oversea Jobs
 
 ### INSTALLATION
