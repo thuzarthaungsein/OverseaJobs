@@ -1,26 +1,33 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## JWT-Laravel7-VueJS
+Testing Project Frame for Oversea Jobs
 
-## About jwt-laravel7-vuejs
-- composer install
-- php artisan migrate
-- php artisan key:generate
-- php artisan jwt:secret
-- npm install
-## admin
+### INSTALLATION
+```bash
+git clone https://github.com/Thuzar-TS/OverseaJobs.git
+```
+Go to project folder.
+```bash
+git checkout your-branch-name (optional)
+composer install
+npm install
+php artisan key:generate
+php artisan jwt:secret
+```
+
+### For Admin
 - user table role default => 1 
-## user
+
+### For User
 - change role => 2 
-## change in table
-- role 1 is admin / role 2 is user
-## setup database
-- .env.example copy .env
-## run project
-- php artisan serve 
-- npm run watch
+
+### Database Setup
+- In Browser, go to localhost/phpmyadmin
+- Create database ```oversea_jobs``` with collation ```utf8mb4_unicode_ci```
+- Clone ```.env.example``` file as ```.env```
+- Change your database connection in .env file.
+- run ```php artisan migrate```
+
+### Run Project
+- run ```php artisan serve```
+- run ```npm run watch```
